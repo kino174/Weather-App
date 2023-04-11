@@ -1,0 +1,6 @@
+#weatherContainer{
+	display:none;
+}
+#city, #zip, #coord{
+	display:none;
+}

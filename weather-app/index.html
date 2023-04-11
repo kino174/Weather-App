@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<center>
+		<input type="radio" onclick=check() id="cityB" name="choice" value="city">
+		<label for="city">City</label>
+		<input type="radio" onclick=check() id="zipB" name="choice" value="zip">
+		<label for="zip">Zip</label><br>
+		<input type="radio" onclick=check() id="coordB" name="choice" value="coord">
+		<label for="coord">Coordinates</label><br>
+	</center>
+	<center>
+		<h1 id="Para1">5 Days Weather Forecast</h1>
+		<div id="city">
+			<p id="inputContainer">City: <input type="text" id="cityInput"></p>
+			<button type="button" onclick="GetInfo1()">Click Me</button>
+		</div>
+		<div id="zip">
+			<p id="inputContainer">Zipcode: <input type="text" id="zipInput"></p>
+			<button type="button" onclick="GetInfo2()">Click Me</button>
+		</div>
+		<div id="coord">
+			<p id="inputContainer">Longitude: <input type="text" id="coordInput"></p>
+			<button type="button" onclick="GetInfo3()">Click Me</button>
+		</div>
+	</center>
+	<div id="weatherContainer">
+		<div id="iconsContainer">
+			<div class="icons">
+				<p class="weather" id="day1"></p>
+				<div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
+				<p class="min" id="day1Min"></p>
+				<p class="max" id="day1Max"></p>
+				<p id="cloud1"></p>
+			</div>
+			<div class="icons">
+				<p class="weather" id="day2"></p>
+				<div class="image"><img src="dots.png" class="imgClass" id="img2"></div>
+				<p class="min" id="day2Min"></p>
+				<p class="max" id="day2Max"></p>
+				<p id="cloud2"></p>
+				<p id="pressure2"></p>
+			</div>
+			<div class="icons">
+				<p class="weather" id="day3"></p>
+				<div class="image"><img src="dots.png" class="imgClass" id="img3"></div>
+				<p class="min" id="day3Min"></p>
+				<p class="max" id="day3Max"></p>
+				<p id="cloud3"></p>
+				<p id="pressure3"></p>
+			</div>
+			<div class="icons">
+				<p class="weather" id="day4"></p>
+				<div class="image"><img src="dots.png" class="imgClass" id="img4"></div>
+				<p class="min" id="day4Min"></p>
+				<p class="max" id="day4Max"></p>
+				<p id="cloud4"></p>
+				<p id="pressure4"></p>
+			</div>
+			<div class="icons">
+				<p class="weather" id="day5"></p>
+				<div class="image"><img src="dots.png" class="imgClass" id="img5"></div>
+				<p class="min" id="day5Min"></p>
+				<p class="max" id="day5Max"></p>
+				<p id="cloud5"></p>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
